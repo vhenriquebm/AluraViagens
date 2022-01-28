@@ -16,14 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="M9x-6l-tHk">
-                                <rect key="frame" x="0.0" y="44" width="414" height="859"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="M9x-6l-tHk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.11764705882352941" green="0.074509803921568626" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="M9x-6l-tHk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FjA-lY-7Wm"/>
+                            <constraint firstItem="M9x-6l-tHk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G97-tW-Trj"/>
+                            <constraint firstAttribute="bottom" secondItem="M9x-6l-tHk" secondAttribute="bottom" id="WPw-KB-wso"/>
+                            <constraint firstItem="M9x-6l-tHk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g5o-o5-mQY"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="viagensTableView" destination="M9x-6l-tHk" id="mFh-6X-NBV"/>

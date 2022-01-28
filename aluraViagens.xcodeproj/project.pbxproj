@@ -82,11 +82,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		428481BA27A3819E00F85E13 = {
+		4234BD8727A45D87008AE63D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				428481C627A3819E00F85E13 /* AppDelegate.swift */,
+				428481C827A3819E00F85E13 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		4234BD8827A45DA3008AE63D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				428481CA27A3819E00F85E13 /* ViewController.swift */,
+				428481CC27A3819E00F85E13 /* Main.storyboard */,
+				4234BD8927A45DC6008AE63D /* Header */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4234BD8927A45DC6008AE63D /* Header */ = {
 			isa = PBXGroup;
 			children = (
 				428481FD27A38D2C00F85E13 /* HomeTableViewHeader.swift */,
 				428481F927A3869000F85E13 /* HomeTableViewHeader.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		428481BA27A3819E00F85E13 = {
+			isa = PBXGroup;
+			children = (
 				428481C527A3819E00F85E13 /* aluraViagens */,
 				428481DF27A381A700F85E13 /* aluraViagensTests */,
 				428481E927A381A700F85E13 /* aluraViagensUITests */,
@@ -107,10 +133,8 @@
 		428481C527A3819E00F85E13 /* aluraViagens */ = {
 			isa = PBXGroup;
 			children = (
-				428481C627A3819E00F85E13 /* AppDelegate.swift */,
-				428481C827A3819E00F85E13 /* SceneDelegate.swift */,
-				428481CA27A3819E00F85E13 /* ViewController.swift */,
-				428481CC27A3819E00F85E13 /* Main.storyboard */,
+				4234BD8727A45D87008AE63D /* Delegates */,
+				4234BD8827A45DA3008AE63D /* Views */,
 				428481D227A381A700F85E13 /* Assets.xcassets */,
 				428481D427A381A700F85E13 /* LaunchScreen.storyboard */,
 				428481D727A381A700F85E13 /* Info.plist */,
