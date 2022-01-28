@@ -17,6 +17,8 @@
 		428481E127A381A700F85E13 /* aluraViagensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428481E027A381A700F85E13 /* aluraViagensTests.swift */; };
 		428481EB27A381A700F85E13 /* aluraViagensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428481EA27A381A700F85E13 /* aluraViagensUITests.swift */; };
 		428481ED27A381A700F85E13 /* aluraViagensUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428481EC27A381A700F85E13 /* aluraViagensUITestsLaunchTests.swift */; };
+		428481FA27A3869000F85E13 /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 428481F927A3869000F85E13 /* HomeTableViewHeader.xib */; };
+		428481FE27A38D2C00F85E13 /* HomeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428481FD27A38D2C00F85E13 /* HomeTableViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		428481E627A381A700F85E13 /* aluraViagensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aluraViagensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		428481EA27A381A700F85E13 /* aluraViagensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aluraViagensUITests.swift; sourceTree = "<group>"; };
 		428481EC27A381A700F85E13 /* aluraViagensUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aluraViagensUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		428481F927A3869000F85E13 /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeader.xib; sourceTree = "<group>"; };
+		428481FD27A38D2C00F85E13 /* HomeTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		428481BA27A3819E00F85E13 = {
 			isa = PBXGroup;
 			children = (
+				428481FD27A38D2C00F85E13 /* HomeTableViewHeader.swift */,
+				428481F927A3869000F85E13 /* HomeTableViewHeader.xib */,
 				428481C527A3819E00F85E13 /* aluraViagens */,
 				428481DF27A381A700F85E13 /* aluraViagensTests */,
 				428481E927A381A700F85E13 /* aluraViagensUITests */,
@@ -235,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				428481D627A381A700F85E13 /* LaunchScreen.storyboard in Resources */,
+				428481FA27A3869000F85E13 /* HomeTableViewHeader.xib in Resources */,
 				428481D327A381A700F85E13 /* Assets.xcassets in Resources */,
 				428481CE27A3819E00F85E13 /* Main.storyboard in Resources */,
 			);
@@ -263,6 +270,7 @@
 			files = (
 				428481CB27A3819E00F85E13 /* ViewController.swift in Sources */,
 				428481C727A3819E00F85E13 /* AppDelegate.swift in Sources */,
+				428481FE27A38D2C00F85E13 /* HomeTableViewHeader.swift in Sources */,
 				428481C927A3819E00F85E13 /* SceneDelegate.swift in Sources */,
 				428481D127A3819E00F85E13 /* aluraViagens.xcdatamodeld in Sources */,
 			);
