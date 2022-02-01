@@ -9,27 +9,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeTableViewHeader" customModule="aluraViagens" customModuleProvider="target">
+        <view contentMode="scaleToFill" ambiguous="YES" id="iN0-l3-epB" customClass="HomeTableViewHeader" customModule="aluraViagens" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kH1-Ni-kTZ">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kH1-Ni-kTZ">
+                    <rect key="frame" x="-293" y="0.0" width="1000" height="250"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alura viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGg-Ix-VPD">
-                            <rect key="frame" x="24" y="52" width="146" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AMa-jL-L9I" userLabel="Banner View">
-                            <rect key="frame" x="31" y="153" width="368" height="130"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleAspectFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AMa-jL-L9I" userLabel="Banner View">
+                            <rect key="frame" x="324" y="153" width="368" height="130"/>
                             <subviews>
-                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xct-UQ-ljY" userLabel="Banner View menor">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xct-UQ-ljY" userLabel="Banner View menor">
                                     <rect key="frame" x="0.0" y="0.0" width="188" height="130"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aproveite o verão com:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-I0-sYX">
                                             <rect key="frame" x="16" y="14" width="149" height="62"/>
@@ -48,29 +39,55 @@
                                     </subviews>
                                     <color key="backgroundColor" red="0.31764705882352939" green="0.70196078431372544" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="BmS-9d-OTu">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="BmS-9d-OTu">
                                     <rect key="frame" x="180" y="0.0" width="188" height="130"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="188" id="K3z-uc-EEl"/>
+                                    </constraints>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="BmS-9d-OTu" firstAttribute="top" secondItem="AMa-jL-L9I" secondAttribute="top" id="B5w-sT-XhM"/>
+                                <constraint firstItem="Xct-UQ-ljY" firstAttribute="width" secondItem="AMa-jL-L9I" secondAttribute="width" multiplier="0.51087" id="K7X-Yc-PDN"/>
+                                <constraint firstItem="Xct-UQ-ljY" firstAttribute="leading" secondItem="AMa-jL-L9I" secondAttribute="leading" id="LHr-ih-7qg"/>
+                                <constraint firstItem="Xct-UQ-ljY" firstAttribute="top" secondItem="AMa-jL-L9I" secondAttribute="top" id="Vvq-5W-I1m"/>
+                                <constraint firstAttribute="trailing" secondItem="BmS-9d-OTu" secondAttribute="trailing" id="YUm-Kd-vGU"/>
+                                <constraint firstItem="BmS-9d-OTu" firstAttribute="width" secondItem="AMa-jL-L9I" secondAttribute="width" multiplier="0.51087" id="bgC-2r-RQA"/>
+                                <constraint firstAttribute="height" constant="130" id="f3g-o1-xuH"/>
+                                <constraint firstAttribute="bottom" secondItem="BmS-9d-OTu" secondAttribute="bottom" id="jdR-kh-bZE"/>
+                                <constraint firstAttribute="bottom" secondItem="Xct-UQ-ljY" secondAttribute="bottom" id="zIW-qf-BBh"/>
+                            </constraints>
                         </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Alura viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGg-Ix-VPD">
+                            <rect key="frame" x="314" y="48" width="146" height="33"/>
+                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="AMa-jL-L9I" secondAttribute="bottom" constant="-33" id="7aW-qR-9mF"/>
+                        <constraint firstAttribute="width" constant="1000" id="NOY-Ej-a4h"/>
+                        <constraint firstItem="uGg-Ix-VPD" firstAttribute="top" secondItem="kH1-Ni-kTZ" secondAttribute="top" constant="48" id="qd4-QG-nsY"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="kH1-Ni-kTZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BGh-Tk-UXA"/>
-                <constraint firstItem="kH1-Ni-kTZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CMQ-1e-gRe"/>
-                <constraint firstItem="kH1-Ni-kTZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Gsy-Ma-nFX"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kH1-Ni-kTZ" secondAttribute="bottom" constant="50" id="giX-TZ-FYh"/>
+                <constraint firstItem="kH1-Ni-kTZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6ng-Ja-Uep"/>
+                <constraint firstItem="kH1-Ni-kTZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SB2-g9-Eph"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kH1-Ni-kTZ" secondAttribute="bottom" constant="50" id="VZi-pQ-G2u"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AMa-jL-L9I" secondAttribute="trailing" constant="15" id="YGH-qZ-GTW"/>
+                <constraint firstItem="uGg-Ix-VPD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="21" id="cbk-Hm-oSJ"/>
+                <constraint firstItem="AMa-jL-L9I" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="31" id="uWR-np-4ze"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="bannerImageView" destination="BmS-9d-OTu" id="T4S-A3-EFg"/>
+                <outlet property="bannerView" destination="AMa-jL-L9I" id="SMQ-Ug-78Z"/>
                 <outlet property="headerView" destination="kH1-Ni-kTZ" id="GrD-xL-Rh5"/>
                 <outlet property="tituloLabel" destination="uGg-Ix-VPD" id="SB0-Wo-8gf"/>
             </connections>
